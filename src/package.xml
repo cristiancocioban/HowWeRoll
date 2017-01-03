@@ -24,5 +24,18 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+        <members>Case-Case %28HowWeRoll%29 Layout</members>
+        <members>Product2-Product %28HowWeRoll%29 Layout</members>
+        <members>Vehicle__c-Vehicle Layout</members>
+        <members>Work_Part__c-Work Part Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Product2</members>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
     <version>37.0</version>
 </Package>
