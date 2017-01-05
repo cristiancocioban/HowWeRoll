@@ -1,3 +1,4 @@
-trigger MaintenanceRequest on Case (before update, after update) {
+trigger MaintenanceRequest on Case (after update, after insert) {
     //todo: call MaintenanceRequestHelper.updateWorkOrders  
+    MaintenanceRequestHelper.updateWorkOrders(Trigger.newMap);
 }
