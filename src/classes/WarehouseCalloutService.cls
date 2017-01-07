@@ -37,7 +37,7 @@ public with sharing class WarehouseCalloutService {
         																	WHERE Warehouse_SKU__c IN :equipmentsFromService.keySet()]); 
         	
         	Map<String, Product2> toUpdateList = new Map<String, Product2>();
-        	for(Id key: tempList.keySet()) {
+        	for(Id key: tempList.keySet()) { 		
         		Product2 p = tempList.get(key);
         		toUpdateList.put(p.Warehouse_SKU__c, p);		
         	}
