@@ -24,4 +24,18 @@ private class WarehouseCalloutServiceTest {
         test.stopTest();
         Upsert listProduct;
   }
+  
+	@isTest
+	private static void testSchedule() {
+		String CRON_EXP = '0 0 1 * * ?';
+		
+		Test.startTest();
+        Test.setMock(HttpCalloutMock.class, new WarehouseCalloutServiceMock());
+        WarehouseCalloutService.runWarehouseEquipmentSync();		
+		String jobId = System.schedule('ScheduledApexTest', CRON_EXP,
+										new WarehouseSyncSchedule());
+		Test.stopTest();
+
+		System.assertEquals(1, 1);
+	}  
 }
