@@ -7,7 +7,7 @@
       <sf:deploy username="${sf.username}" 
         password="${sf.password}" 
         serverurl="${sf.serverurl}" 
-        logType="Db"
+        logType="Profiling"
         testLevel="RunSpecifiedTests"
         deployRoot="src">
         <runTest>WarehouseCalloutServiceTest</runTest>
