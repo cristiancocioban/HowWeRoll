@@ -7,10 +7,11 @@
       <sf:deploy username="${sf.username}" 
         password="${sf.password}" 
         serverurl="${sf.serverurl}" 
-        trace="true"
-        runAllTests="true"
         logType="Detail"
-        deployRoot="src"/>
+        deployRoot="src">
+        <runTest>WarehouseCalloutServiceTest</runTest>
+        <runTest>MaintenanceRequestTest</runTest> 
+      </sf:deploy>   
     </target>
 
     <target name="undeployCode">
