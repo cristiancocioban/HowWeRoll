@@ -8,6 +8,7 @@
         password="${sf.password}" 
         serverurl="${sf.serverurl}" 
         logType="Detail"
+        testLevel="RunSpecifiedTests"
         deployRoot="src">
         <runTest>WarehouseCalloutServiceTest</runTest>
         <runTest>MaintenanceRequestTest</runTest> 
