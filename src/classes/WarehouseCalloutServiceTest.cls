@@ -36,6 +36,9 @@ private class WarehouseCalloutServiceTest {
 										new WarehouseSyncSchedule());
 		Test.stopTest();
 
+		System.debug('testSchedule finished');
 		System.assertEquals(1, 1);
+		System.debug('testSchedule after assert');
+		
 	}  
 }
