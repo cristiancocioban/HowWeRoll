@@ -7,6 +7,7 @@
 @IsTest
 private class InstallationTests {
     static testmethod void testMaintenanceRequest() {
+    	//comment for code
         //MaintenanceRequestHelper.updateWorkOrders();
     }
     static testmethod void testWarehouseSync() {
