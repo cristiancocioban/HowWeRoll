@@ -14,7 +14,7 @@ public class MaintenanceRequestHelper {
 			Integer cycleDays = case.Work_Parts__r[0].Equipment__r.Maintenance_Cycle__c.intValue(); 
 			        
         */
-        List<Case> maintanceRequests = [SELECT Id, Subject, CreatedDate, Status, Vehicle__c,
+        List<Case> maintanceRequests = [SELECT Id, Subject, Description, CreatedDate, Status, Vehicle__c,
         									   Equipment__c, Type, (SELECT Id, Name, Equipment__r.Maintenance_Cycle__c FROM Work_Parts__r)
         							    FROM Case WHERE Id in :mapMaintanceRequests.keySet()];
         
