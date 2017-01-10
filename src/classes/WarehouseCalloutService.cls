@@ -30,7 +30,7 @@ public with sharing class WarehouseCalloutService {
         		equipmentsFromService.put(sku, eq);   		
         	}
         	
-        	Map<Id, Product2> tempList = new Map<Id, Product2>([SELECT Id, Name, Warehouse_SKU__c, Replacement_Part__c,
+        	Map<Id, Product2> tempList = new Map<Id, Product2>([SELECT Id, Name, Description, Warehouse_SKU__c, Replacement_Part__c,
         																	Current_Inventory__c, Maintenance_Cycle__c,
         																	Lifespan_Months__c, Cost__c
         																	FROM Product2
